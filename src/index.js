@@ -16,15 +16,12 @@ let id = getUserId();
   const LDProvider = await asyncWithLDProvider({
     clientSideID: CLIENTKEY,
     context: {
-      kind: 'device',
+      kind: "device",
       key: id,
-      //dynamically set these custom attributes using the deviceType and osName selectors from the npm package
-      custom: {
-        device: deviceType,
-        operatingSystem: osName,
-        browserName: browserName
-      },
-    },
+      device: deviceType,
+      operatingSystem: osName,
+      browserName: browserName
+      }
   });
 
   ReactDOM.render(
