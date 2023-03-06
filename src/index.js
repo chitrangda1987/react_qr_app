@@ -9,12 +9,14 @@ import getUserId from "./util/getUserId";
 
 const CLIENTKEY = "6359ded6c354a810ff9dfa4d";
 
+
 let id = getUserId();
 
 (async () => {
   const LDProvider = await asyncWithLDProvider({
     clientSideID: CLIENTKEY,
-    user: {
+    context: {
+      kind: 'user',
       key: id,
       //dynamically set these custom attributes using the deviceType and osName selectors from the npm package
       custom: {
