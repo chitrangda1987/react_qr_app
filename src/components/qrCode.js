@@ -6,13 +6,6 @@ const QRURL = "https://chitrangda1987.github.io/react_qr_app/";
 
 const qrCodeHome = ({ flags, ldClient /*, ...otherProps */ }) => {
   let showFeature = ldClient.variation("reactQRCode");
-
-  if (showFeature){
-
-    ldClient.track('click-count-measure-button', false);
-    ldClient.track('click-count-measure-button', { someData: 'value' });
-
-  }
   
   return showFeature ? (
     <div>
