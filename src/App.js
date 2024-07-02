@@ -6,6 +6,7 @@ import HeaderLDLogo from "./components/headerLogo";
 import Heart from "./components/heart";
 import CustomerLogo from "./components/customerLogo";
 import Toggle from "./components/toggle";
+import FunctionClick from "./components/FunctionClick";
 
 function App() {
   const [headerStyle, setHeaderStyle] = useState("gray-app-header");
@@ -34,6 +35,8 @@ function App() {
         <QRCode />
         <br />
         <Toggle />
+        <br />
+        <FunctionClick />
       </div>
     </div>
   );
